@@ -4,5 +4,7 @@
     &lt;TestId&gt;NUnit3x::68217DCA-359B-4838-9BA9-9AF89BD782B6::net5.0::TestNinja.UnitTests.MathTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::68217DCA-359B-4838-9BA9-9AF89BD782B6::net5.0::TestNinja.UnitTests.CustomerControllerTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::68217DCA-359B-4838-9BA9-9AF89BD782B6::net5.0::TestNinja.UnitTests.ErrorLoggerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::68217DCA-359B-4838-9BA9-9AF89BD782B6::net5.0::TestNinja.UnitTests.DemeritPointsCalculatorTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::68217DCA-359B-4838-9BA9-9AF89BD782B6::net5.0::TestNinja.UnitTests.FizzBuzzTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
