@@ -30,6 +30,15 @@ namespace TestNinja.UnitTests
             Assert.That(result,Is.EqualTo(3));
         }
 
+        [Test]
+        [Ignore("A faire la semaine prochaine")]
+        public void Add_WhenCalled_ReturnSumOfArguments_IgnoreThisTest()
+        {
+
+            var result = _math.Add(1, 2);
+            Assert.That(result, Is.EqualTo(3));
+        }
+
 
 
         [Test]
@@ -38,7 +47,6 @@ namespace TestNinja.UnitTests
         [TestCase(2, 2, 2)]
         public void Max_WhenCalled_ReturnGreaterArg(int a ,int b,int expected )
         {
-
             var result = _math.Max(a, b);
             Assert.That(result, Is.EqualTo(expected));
         }
