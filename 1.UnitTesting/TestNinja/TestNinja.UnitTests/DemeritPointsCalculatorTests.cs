@@ -5,7 +5,7 @@ using TestNinja.Fundamentals;
 namespace TestNinja.UnitTests
 {
     [TestFixture]
-    public class DemeritPointsCalculatorTests
+    public class DemeritPointsCalculatorTests  
     {
         [Test]
         [TestCase(-1)]
