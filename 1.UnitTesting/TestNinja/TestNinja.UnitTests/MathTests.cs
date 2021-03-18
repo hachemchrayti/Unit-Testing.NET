@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,28 +30,42 @@ namespace TestNinja.UnitTests
             Assert.That(result,Is.EqualTo(3));
         }
 
-        [Test]
-        public void Max_WhenFirstArgIsGreater_ReturnFirstArg()
-        {
-            
-            var result = _math.Max(2, 1);
-            Assert.That(result, Is.EqualTo(2));
-        }
+
 
         [Test]
-        public void Max_WhenSecondArgIsGreater_ReturnSecondArg()
+        [TestCase(2,1,2)]
+        [TestCase(1, 2, 2)]
+        [TestCase(2, 2, 2)]
+        public void Max_WhenCalled_ReturnGreaterArg(int a ,int b,int expected )
         {
-            
-            var result = _math.Max(1, 2);
-            Assert.That(result, Is.EqualTo(2));
+
+            var result = _math.Max(a, b);
+            Assert.That(result, Is.EqualTo(expected));
         }
 
-        [Test]
-        public void Max_WhenArsAreEqual_ReturnSameArg()
-        {
+
+        //[Test]
+        //public void Max_WhenFirstArgIsGreater_ReturnFirstArg()
+        //{
+            
+        //    var result = _math.Max(2, 1);
+        //    Assert.That(result, Is.EqualTo(2));
+        //}
+
+        //[Test]
+        //public void Max_WhenSecondArgIsGreater_ReturnSecondArg()
+        //{
+            
+        //    var result = _math.Max(1, 2);
+        //    Assert.That(result, Is.EqualTo(2));
+        //}
+
+        //[Test]
+        //public void Max_WhenArsAreEqual_ReturnSameArg()
+        //{
            
-            var result = _math.Max(2, 2);
-            Assert.That(result, Is.EqualTo(2));
-        }
+        //    var result = _math.Max(2, 2);
+        //    Assert.That(result, Is.EqualTo(2));
+        //}
     }
 }
